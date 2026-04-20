@@ -1,15 +1,15 @@
 # Proyecto Fundamentos De Software
 
-Descripción del Sistema
+# Descripción del Sistema
 
-Historias de Usuario
+# Historias de Usuario
 
-Requisitos Extrafuncionales
+# Requisitos Extrafuncionales
 
-Entidades del Dominio
+# Entidades del Dominio
 
-Mockups
+# Mockups
 
-Diseño Arquitectónico
+# Diseño Arquitectónico
 
-Responsabilidades del Equipo
+# Responsabilidades del Equipo
