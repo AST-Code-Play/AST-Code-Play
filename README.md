@@ -24,6 +24,69 @@ El proyecto consiste en el diseño y desarrollo de una plataforma de videojuegos
 Ver [ReqExtrafuncionales.md](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/ReqExtrafuncionales.md)
 
 ## Entidades del Dominio
+```mermaid
+classDiagram
+direction LR
+
+class MainMenu {
+  +_on_play_button_pressed()
+  +_on_exit_button_pressed()
+}
+
+class GameScene {
+}
+
+class Player {
+  +speed: float
+  +velocity: Vector2
+  +direction: Vector2
+  +_physics_process()
+}
+
+class Enemy {
+  +speed: float
+  +waypoints: Array
+  +angle: float
+  +length: float
+  +direction: Vector2
+  +current_index: int
+  +game_over_triggered: bool
+  +_physics_process()
+  +is_in_cone()
+  +has_line_of_sight()
+  +_on_timer_timeout()
+}
+
+class Goal {
+  +activated: bool
+  +next_scene: String
+  +_on_body_entered()
+  +_go_to_next_scene()
+}
+
+class GameOver {
+  +_on_menu_pressed()
+  +_on_try_again_pressed()
+}
+
+class DemoCompleted {
+  +_on_button_pressed()
+  +_on_play_again_pressed()
+}
+
+MainMenu --> GameScene : load
+GameScene --> Player : contains
+GameScene --> Enemy : contains
+GameScene --> Goal : contains
+Enemy --> Player : detect
+Enemy --> GameOver : change_scene
+Goal --> Player : detect
+Goal --> DemoCompleted : change_scene
+GameOver --> MainMenu : menu
+GameOver --> GameScene : retry
+DemoCompleted --> MainMenu : menu
+DemoCompleted --> GameScene : play_again
+```
 
 ## Mockups
 
