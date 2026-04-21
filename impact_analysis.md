@@ -1,19 +1,30 @@
 ## 1. Cambio solicitado 
 
-[Describir el cambio de requerimiento asignado por el profesor] 
+Implementar un contador de horas de juego, el cual no debe ser manipulado por el jugador solamente por el desarrollador.
 
 ## 2. Nuevas historias de usuario 
 
-### US-XX: [nombre] 
+ ### US-01: Sistema de reconocimiento 
 
-Como [actor], 
-quiero [acción], 
-para [beneficio]. 
+Como usuario, 
+quiero obtener reconocimiento del tiempo invertido, 
+para incentivar la lealtad del juego.
 
 Criterios de aceptación:
 
-- CA1: ... 
-- CA2: ...  
+- CA1: Dado que el contador de horas esta activo, cuando el valor alcanza un tiempo determinado, entonces el sistema debe marcar el logro como "completado" internamente.
+- CA2: Dado que el tiempo es controlado por el desarrollador, cuando se intenta modificar manualmente el archivo de guardado, entonces el sistema debe validar para evitar fraudes en las recompensas.
+
+### US-02: Retención de usuario.
+
+Como desarrollador, 
+quiero implementar un contador de tiempo de juego persistente, 
+para analizar la retención del usuario.
+
+Criterios de aceptación:
+
+- CA1: Dado que el jugador abre el menú de pausa, cuando la acción de juego se detiene, entonces el contador debe suspenderse inmediatamente para no inflar las estadísticas.
+- CA2: Dado que el jugador cierra la aplicación, cuando se detecta el evento de cierre, entonces el sistema debe guardar el tiempo acumulado.
 
 ## 3. Impacto en requisitos extrafuncionales 
 
@@ -22,10 +33,16 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 
 | REF ID | Descripción                    | Prioridad anterior | Prioridad nueva | Cambio / Motivo           | 
 |--------|--------------------------------|--------------------|-----------------|---------------------------| 
-| REF-01 | [descripción]                  | Alta               | Alta            | Sin cambio                | 
-| REF-03 | [descripción]                  | Media              | Alta            | El cambio lo hace crítico | 
-| REF-07 | [nuevo REF derivado del cambio]| —                  | Alta            | Nuevo requisito           | 
-
+| REF-01 | Eficiencia                  | Alta               | Alta            | Sin cambio                | 
+| REF-02 | Fiabilidad / Disponibilidad  | Media               | Media            | Sin cambio              | 
+| REF-03 | Seguridad                  | Media              | Alta            | El cambio lo hace crítico | 
+| REF-04 | Compatibilidad  | Media               | Media            | Sin cambio              | 
+| REF-05 | Aforo / Soporte | Media               | Media            | Sin cambio              | 
+| REF-06 | Recuperabilidad | Baja                  | Alta            | El cambio lo hace crítico   | 
+| REF-07 | Capacidad de interacción  | Baja               | Baja            | Sin cambio              | 
+| REF-08 | Calidad de rendimiento | Alta                  | Alta            | Sin cambio           | 
+| REF-09 | Mantenibilidad | Alta                 | Media            | El requisito se va dirigido al cambio  | 
+| REF-10 | Testabilidad | Media | Alta            | El cambio lo hace crítico           | 
  
 
 ## 4. Impacto en entidades del dominio 
@@ -80,7 +97,6 @@ Si el estilo se mantiene, justificar que sigue siendo válido frente al cambio.]
 Fundamentación de cambios modulares: 
 
 [Justificar por qué se agregan, modifican o eliminan módulos en función del 
-
 cambio de requerimientos y/o la repriorización de REF.] 
 
  
@@ -100,15 +116,11 @@ cambio de requerimientos y/o la repriorización de REF.]
 - Impacto: [en qué módulos o REF afecta] 
 
  
-
 ## 9. Trazabilidad actualizada 
 
  
-
 | Historia | REF relacionado | Módulo     | Mockup  | 
-
 |----------|-----------------|------------|---------| 
-
 | US-XX    | REF-XX          | [módulo]   | [ref]   | 
 
  
@@ -116,7 +128,6 @@ cambio de requerimientos y/o la repriorización de REF.]
 ## 10. Justificación global y trade-offs 
 
 [Por qué la solución propuesta es coherente con el sistema. 
-
 Qué trade-offs se asumieron, especialmente ante cambios de prioridad en REF. 
 
 Qué se gana y qué se sacrifica con las decisiones tomadas.] 
