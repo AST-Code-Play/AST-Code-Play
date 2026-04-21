@@ -11,7 +11,7 @@ Justificación basada en REF priorizados:
 | REF-03 | El producto recibe actualizaciones constantes | Alta      | Al ser de capas es mas facil subir actualizaciones sin interferir en las demas capas| 
 
 
-Explicación textual: Se escogio el estilo de 4 capas ya que permite dividir el motor del juego 
+Explicación textual: Se escogio el estilo de 3 capas ya que permite dividir el motor del juego 
 (main menu, HUD y configuracion) de la logica del juego (reglas del sigilo, deteccion, timing, IA, control del jugador)
 y de la capa de datos ( datos del usuario, guardado de partidas, configuracion personalizada)
 
