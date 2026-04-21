@@ -23,8 +23,6 @@ Este estilo es bastante util al desarrollarlo, Como es un juego basado en el des
 ## 2. Diagrama de Arquitectura 
 
 ![Diagrama](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/Diagrama.png)
-[Insertar diagrama que muestre el estilo y los módulos. 
-Ejemplo: ![Diagrama de Arquitectura](./)] 
 
 ## 3. Descomposición Modular 
 Fundamentación: [Criterio de descomposición: por dominio, capa, funcionalidad, etc.] 
