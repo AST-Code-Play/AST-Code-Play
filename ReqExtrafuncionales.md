@@ -1,6 +1,7 @@
 ## Catálogo de Requisitos Extrafuncionales
 
 Clasificación según ISO 25010 y tipo de restricción.
+
 La columna Prioridad refleja la importancia para las decisiones de arquitectura: Alta, Media o Baja.
 
  
