@@ -21,6 +21,8 @@ El proyecto consiste en el diseño y desarrollo de una plataforma de videojuegos
 
 ## Requisitos Extrafuncionales
 
+Ver ReqExtrafuncionales.md
+
 ## Entidades del Dominio
 
 ## Mockups
