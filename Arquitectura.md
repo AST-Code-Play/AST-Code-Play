@@ -6,8 +6,11 @@ Justificación basada en REF priorizados:
 
 | REF ID | Descripción                              | Prioridad | Cómo lo aborda el estilo      | 
 |--------|------------------------------------------|-----------|-------------------------------| 
-| REF-01 | [descripción]                            | Alta      | [explicación]                 | 
-| REF-02 | [descripción]                            | Alta      | [explicación]                 | 
+| REF-01 | El sistema debe responder en menos de 2 seg | Alta      | [explicación]                 | 
+| REF-02 | los juegos no presentan problemas tecnicos  | Alta      | [explicación]                 | 
+| REF-03 | El producto recibe actualizaciones constantes | Alta      | [explicación]                 | 
+| REF-04 | Todos los modulos del sistema fincionan correctamente | Alta      | [explicación]                 | 
+
 
 Explicación textual: Se escogio el estilo de 4 capas ya que permite dividir el motor del juego 
 (main menu, HUD y configuracion) de la logica del juego (reglas del sigilo, deteccion, timing, IA, control del jugador)
