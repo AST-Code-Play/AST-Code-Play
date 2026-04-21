@@ -4,6 +4,14 @@
 
 ## Historias de Usuario
 
+| Integrante | Rol | Ítems de la rúbrica a cargo | 
+|------------|-----|----------------------------| 
+| Martín Loyola | Product Owner | [Ítems] | 
+| Jesús Carvajal | Scrum Master  | [Ítems] |
+| Cristobal Cartagena | Developer | [Ítems] |
+| Bruno Mora | Developer | [Ítems] |
+| Jesús Cortés | Developer | [Ítems] |
+
 ## Requisitos Extrafuncionales
 
 ## Entidades del Dominio
@@ -16,6 +24,9 @@
 
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
 |------------|-----|----------------------------| 
-| [Nombre 1] | [Rol] | [Ítems] | 
-| [Nombre 2] | [Rol] | [Ítems] |
+| Martín Loyola | Product Owner | [Ítems] | 
+| Jesús Carvajal | Scrum Master  | [Ítems] |
+| Cristobal Cartagena | Developer | [Ítems] |
+| Bruno Mora | Developer | [Ítems] |
+| Jesús Cortés | Developer | [Ítems] |
 
