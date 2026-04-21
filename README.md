@@ -90,6 +90,8 @@ DemoCompleted --> GameScene : play_again
 
 ## Mockups
 
+Ver [Mockups.md](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/Mockups.md)
+
 ## Diseño Arquitectónico
 
 Ver [Arquitectura.md](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/blob/main/Arquitectura.md)
