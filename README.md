@@ -35,5 +35,5 @@ El proyecto consiste en el diseño y desarrollo de una plataforma de videojuegos
 | Jesús Carvajal | Scrum Master  | [Ítems] |
 | Cristobal Cartagena | Developer | 1.1 Historias de Usuario |
 | Bruno Mora | Developer | 1.1 Historias de Usuario, 1.2 Diseño de requerimientos, 2.4 Entidades del dominio  |
-| Jesús Cortés | Developer | [Ítems] |
+| Jesús Cortés | Developer | 1.1 Historias de Usuario |
 
