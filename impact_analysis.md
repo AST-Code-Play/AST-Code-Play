@@ -47,16 +47,14 @@ Trazar cambios de prioridad que motiven cambios en decisiones de arquitectura.
 
 ## 4. Impacto en entidades del dominio 
 
-[Nuevas entidades, atributos o relaciones afectadas] + Diagrama acutalizado 
-
+- Como la nueva implementacion del contador de tiempo no afecta a las entidades de dominios, no se modificara este apartado.
  
 
 ## 5. Impacto en mockups 
 
-[Mockups afectados y descripción de cambios necesarios] 
+- No tenemos las herramientas para implementar mockups, pues no se a realizado la modificacion como tal. 
 
  
-
 ## 6. Impacto en arquitectura 
 
 ### 6.1 ¿Cambia el estilo arquitectónico? 
@@ -75,34 +73,28 @@ No cambia, ya que se mantiene el formato de capas (3), ya que el contador vivir�
 
 ## 7. Impacto en módulos 
 
- 
-| Módulo             | Tipo de impacto    | Responsabilidad actualizada        | Ofrece a otros (actualizado)   | 
-|--------------------|--------------------|------------------------------------|--------------------------------| 
-| [Módulo existente] | modificado         | [descripción actualizada]          | [interfaces actualizadas]      | 
-| [Módulo nuevo]     | nuevo              | [responsabilidad]                  | [qué expone]                   | 
-| [Módulo eliminado] | eliminado          | —                                  | —                              | 
+| Módulo             | Tipo de impacto    | Responsabilidad actualizada        |
+|--------------------|--------------------|------------------------------------|
+| Capa de presentación | Modificado         | HUD       | 
+| Capa de lógica del juego    | Modificado      | Datos del contador               |
+| Capa de datos | Modificado    | Almacenamiento        |
 
- 
+
 Fundamentación de cambios modulares: 
 
-[Justificar por qué se agregan, modifican o eliminan módulos en función del 
-cambio de requerimientos y/o la repriorización de REF.] 
-
- 
+- Este contador viviría en la Capa de lógica del juego (Service Layer), se mostraría en la Capa de Presentación y se almacenaría de forma segura en la Capa de Datos (Data Layer).
 
 ## 8. Nuevas decisiones de diseño 
 
- 
-
 ### Decisión 1 
 
-- Decisión: [qué se decide] 
+- Decisión: Crear un nuevo contador de tiempo de el videojuego.
 
-- Motivación: [por qué, referenciando REF repriorizado si aplica] 
+- Motivación: Para tener un mayor control del usuario en sus horas de juego, referenciando REF repriorizado si aplica.
 
-- Alternativas consideradas: [opciones evaluadas] 
+- Alternativas consideradas: Nuestro equipo intento realizarlo mediante pagina web, para mayor comodidad se realizara de manera online.
 
-- Impacto: [en qué módulos o REF afecta] 
+- Impacto: REF 08 puede afectar el rendimineto en el disposito en el que se juega porque necesita procesar y evaluar datos al mismo tiempo que se esta ejecutando el juego.
 
  
 ## 9. Trazabilidad actualizada 
@@ -110,13 +102,10 @@ cambio de requerimientos y/o la repriorización de REF.]
  
 | Historia | REF relacionado | Módulo     | Mockup  | 
 |----------|-----------------|------------|---------| 
-| US-XX    | REF-XX          | [módulo]   | [ref]   | 
-
+| US-01    | REF-06 (Recuperabilidad) | [módulo]   | [ref]   | 
+| US-02    | REF-03 (Seguridad)       | [módulo]   | [ref]   | 
  
 
 ## 10. Justificación global y trade-offs 
 
-[Por qué la solución propuesta es coherente con el sistema. 
-Qué trade-offs se asumieron, especialmente ante cambios de prioridad en REF. 
-
-Qué se gana y qué se sacrifica con las decisiones tomadas.] 
+La solución propuesta es coherente con la arquitectura ya hecha, debido a que esta ya posee un hud en la capa de presentacion del juego donde mostrar el contador, el cual se almacenara en la capa de datos junto a los datos de usuario, mientras que en la capa logica del juego en control del jugador se debe sumar y guardar el tiempo de sesión. Los trade-offs que se asumen son que ahora el control del jugador debe realizar dos trabajos a la vez o cual creara un mayor acoplamiento
