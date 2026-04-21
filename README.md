@@ -5,7 +5,7 @@
 ## Historias de Usuario
 
 | ID   | Nombre                          | Issue  | 
-|------|---------------------------------|----- --| 
+|------|---------------------------------|-------| 
 | US-01 | Tutorial didáctico             | #1    | 
 | US-02 | Sistema de compras             | #2    |
 | US-03 | Lista de conexiones y estado   | #3    |  
