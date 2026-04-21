@@ -1,25 +1,21 @@
 # Proyecto Fundamentos De Software
 
-# Descripción del Sistema
+## Descripción del Sistema
 
-# Historias de Usuario
+## Historias de Usuario
 
-# Requisitos Extrafuncionales
+## Requisitos Extrafuncionales
 
-# Entidades del Dominio
+## Entidades del Dominio
 
-# Mockups
+## Mockups
 
-# Diseño Arquitectónico
+## Diseño Arquitectónico
 
 ## Responsabilidades del equipo 
 
-
 | Integrante | Rol | Ítems de la rúbrica a cargo | 
-
 |------------|-----|----------------------------| 
-
 | [Nombre 1] | [Rol] | [Ítems] | 
-
 | [Nombre 2] | [Rol] | [Ítems] |
 
