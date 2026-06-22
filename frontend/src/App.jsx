@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
-const JUGADOR_ID = 'jugador-001'; // jugador fijo para esta demo de la HU
+const JUGADOR_ID = 'jugador-001';
 
 export default function App() {
   const [jugador, setJugador] = useState(null);
   const [catalogo, setCatalogo] = useState([]);
   const [inventario, setInventario] = useState([]);
-  const [mensaje, setMensaje] = useState(null); // { tipo: 'exito' | 'error', texto }
+  const [mensaje, setMensaje] = useState(null);
   const [cargando, setCargando] = useState(false);
 
   const cargarDatos = useCallback(async () => {
