@@ -1,7 +1,3 @@
-// NOTA: este archivo corresponde al borrador de datos de la entrega anterior.
-// En esta entrega, los mismos datos viven en PostgreSQL (ver backend/src/db/schema.sql)
-// y la lógica real está en backend/src/services/tiendaService.js.
-// Se conserva aquí únicamente como referencia histórica del diseño inicial.
 
 const jugadores = {
   "jugador-001": {
