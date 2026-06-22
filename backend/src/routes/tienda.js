@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const tiendaService = require('../services/tiendaService');
 
-// GET /api/catalogo - lista los objetos de la tienda
 router.get('/catalogo', async (req, res) => {
   try {
     const catalogo = await tiendaService.obtenerCatalogo();
@@ -13,7 +12,6 @@ router.get('/catalogo', async (req, res) => {
   }
 });
 
-// GET /api/jugadores/:id - estado actual del jugador (saldo, etc.)
 router.get('/jugadores/:id', async (req, res) => {
   try {
     const jugador = await tiendaService.obtenerJugador(req.params.id);
@@ -25,7 +23,6 @@ router.get('/jugadores/:id', async (req, res) => {
   }
 });
 
-// GET /api/jugadores/:id/inventario - inventario del jugador
 router.get('/jugadores/:id/inventario', async (req, res) => {
   try {
     const inventario = await tiendaService.obtenerInventario(req.params.id);
@@ -36,7 +33,6 @@ router.get('/jugadores/:id/inventario', async (req, res) => {
   }
 });
 
-// POST /api/compras - { jugadorId, objetoId } intenta ejecutar la compra
 router.post('/compras', async (req, res) => {
   const { jugadorId, objetoId } = req.body;
   if (!jugadorId || !objetoId) {
@@ -50,7 +46,6 @@ router.post('/compras', async (req, res) => {
       return res.status(201).json(resultado);
     }
 
-    // Mapeo de códigos de negocio a códigos HTTP
     const httpStatus = {
       JUGADOR_NO_ENCONTRADO: 404,
       OBJETO_NO_ENCONTRADO: 404,
