@@ -1,4 +1,3 @@
-
 const jugadores = {
   "jugador-001": {
     id: "jugador-001",
