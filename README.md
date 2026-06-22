@@ -97,7 +97,7 @@ VITE_API_URL=http://localhost:3001/api
    npm run dev             # http://localhost:5173
    ```
 
-### Instalación y ejecución (con Docker — bonus)
+### Instalación y ejecución (con Docker)
 
 ```bash
 docker-compose up --build
