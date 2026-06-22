@@ -53,6 +53,3 @@ según el alcance definido en la pauta de evaluación (sección 5.2).
 5. Se revisó el código en busca de code smells evidentes antes del merge (ver
    `DeudaTecnica.md`).
 6. El README permite instalar y ejecutar el sistema de forma autónoma, con y sin Docker.
-
-> Nota: esta especificación corresponde únicamente a la historia que se implementará para esta
-> entrega, independientemente de los demás issues abiertos en GitHub.
