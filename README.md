@@ -206,11 +206,9 @@ Ver [Arquitectura.md](./Arquitectura.md)
 
 | Integrante | Rol(es) | Ítems de la rúbrica a cargo |
 |------------|---------|------------------------------|
-| Bruno Mora |  | [completar] |
-| Cristobal Cartagena | [completar] | [completar] |
-| Jesus Cortes | [completar] | [completar] |
-| [completar] | [completar] | [completar] |
-| [completar] | [completar] | [completar] |
+| Bruno Mora | Product Owner | [completar] |
+| Cristobal Cartagena | Scrum Master | [completar] |
+| Jesus Cortes | Developer | [completar] |
 
 > **Importante:** completar esta tabla con los roles reales asignados (Scrum Master,
 > Arquitecto, Technical Lead, Developer, Quality Assurance) antes del cierre de la entrega —
