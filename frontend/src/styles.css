@@ -1,0 +1,106 @@
+:root {
+  --bg: #14171c;
+  --panel: #1f2430;
+  --accent: #5ad1c4;
+  --accent-warn: #e0a93a;
+  --accent-error: #e3675c;
+  --text: #e8eaef;
+  --text-dim: #8a90a0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.contenedor {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.encabezado h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.estado-jugador {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.saldo { color: var(--accent); font-weight: 600; }
+.inventario-contador { color: var(--text-dim); }
+
+.mensaje {
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+.mensaje-exito { background: rgba(90, 209, 196, 0.15); border: 1px solid var(--accent); }
+.mensaje-error { background: rgba(227, 103, 92, 0.15); border: 1px solid var(--accent-error); }
+
+.grilla-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta-objeto {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.tarjeta-objeto.no-disponible { opacity: 0.55; }
+
+.tarjeta-objeto h2 { font-size: 1.05rem; margin: 0; }
+.descripcion { font-size: 0.85rem; color: var(--text-dim); min-height: 40px; }
+.tipo { font-size: 0.75rem; text-transform: uppercase; color: var(--accent); }
+.precio { font-weight: 600; margin: 4px 0; }
+
+.etiqueta {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--accent-warn);
+  color: #1a1a1a;
+  width: fit-content;
+}
+.etiqueta-poseido { background: var(--accent); }
+
+button {
+  margin-top: auto;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #0d0d0d;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled {
+  background: #3a3f4b;
+  color: var(--text-dim);
+  cursor: not-allowed;
+}
