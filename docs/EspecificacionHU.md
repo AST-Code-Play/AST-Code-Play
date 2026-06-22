@@ -1,6 +1,6 @@
 # Especificación de Historia de Usuario
 
-## US-02: Sistema de compras
+## US-02: Tienda de objetos con moneda virtual ganada en partida (Refinamiento de la US-12)
 
 Como jugador activo de la plataforma que ha acumulado moneda virtual mediante partidas completadas,
 quiero acceder a una tienda dentro del juego donde pueda gastar dicha moneda para adquirir objetos
