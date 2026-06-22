@@ -114,7 +114,7 @@ cd backend
 npm test
 ```
 
-## Entidades del Dominio (mecánica de juego — heredado de entrega anterior)
+## Entidades del Dominio (mecánica de juego, heredado de entrega anterior)
 
 ![Modelo de dominio de la mecánica de juego](./docs/img/modelo_dominio_mecanica_juego.png)
 
