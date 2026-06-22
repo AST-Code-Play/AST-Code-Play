@@ -187,8 +187,6 @@ DemoCompleted --> GameScene : play_again
 
 </details>
 
-> Nota: este modelo corresponde a la mecánica de juego (plataformas/sigilo) y es independiente
-> del modelo de dominio de US-02 (ver [docs/ModeloDominio_US02.md](./docs/ModeloDominio_US02.md)).
 
 ## Mockups
 
@@ -209,10 +207,6 @@ Ver [Arquitectura.md](./Arquitectura.md)
 | Bruno Mora | Product Owner | [completar] |
 | Cristobal Cartagena | Scrum Master | [completar] |
 | Jesus Cortes | Developer | [completar] |
-
-> **Importante:** completar esta tabla con los roles reales asignados (Scrum Master,
-> Arquitecto, Technical Lead, Developer, Quality Assurance) antes del cierre de la entrega —
-> es obligatoria para la evaluación individual (sección 5.8 de la pauta).
 
 ## Bonus
 
