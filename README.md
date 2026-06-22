@@ -21,7 +21,7 @@ del juego.
 US-02 integra una **transacción que une dos entidades** (Jugador y Objeto), correspondiente al
 alcance mínimo exigido por la pauta de evaluación.
 
-### Otras historias de usuario del proyecto (fuera de alcance de esta entrega)
+## Otras historias de usuario del proyecto
 
 | ID   | Nombre                          | Issue  |
 |------|---------------------------------|--------|
