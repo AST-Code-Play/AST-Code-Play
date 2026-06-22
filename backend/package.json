@@ -1,0 +1,19 @@
+{
+  "name": "ast-code-play-backend",
+  "version": "1.0.0",
+  "description": "Backend de US-02: Sistema de compras (tienda dentro del juego) - AST Code & Play",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node src/db/init.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
