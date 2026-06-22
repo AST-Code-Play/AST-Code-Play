@@ -1,8 +1,5 @@
 # openspecs/us-02-sistema-de-compras.spec.md
 
-> Esta especificación guio el desarrollo de US-02 antes de escribir código (spec-driven
-> development). Cualquier cambio de comportamiento debe actualizarse aquí primero.
-
 ## Objetivo
 
 Permitir que un jugador gaste su moneda virtual para adquirir objetos del catálogo de la
