@@ -1,5 +1,3 @@
-// Ejecuta schema.sql contra la base de datos configurada en .env
-// Uso: npm run db:init
 const fs = require('fs');
 const path = require('path');
 const pool = require('./pool');
