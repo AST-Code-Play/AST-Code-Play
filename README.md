@@ -206,9 +206,9 @@ Ver [Arquitectura.md](./Arquitectura.md)
 
 | Integrante | Rol(es) | Ítems de la rúbrica a cargo |
 |------------|---------|------------------------------|
-| [completar] | [completar] | [completar] |
-| [completar] | [completar] | [completar] |
-| [completar] | [completar] | [completar] |
+| Bruno Mora |  | [completar] |
+| Cristobal Cartagena | [completar] | [completar] |
+| Jesus Cortes | [completar] | [completar] |
 | [completar] | [completar] | [completar] |
 | [completar] | [completar] | [completar] |
 
