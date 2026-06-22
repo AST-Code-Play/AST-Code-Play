@@ -11,7 +11,6 @@ const pool = require('../db/pool');
  *
  * La capa de lógica del juego (este servicio) no conoce HTTP; las rutas
  * (capa de presentación/API) son las que traducen el resultado a códigos
- * HTTP. Esto respeta la arquitectura en capas ya definida en Arquitectura.md.
  */
 
 async function obtenerCatalogo() {
@@ -35,10 +34,6 @@ async function obtenerInventario(jugadorId) {
   return rows;
 }
 
-/**
- * Ejecuta el intento de compra de un objeto por parte de un jugador.
- * Devuelve { ok: boolean, codigo, mensaje, jugador?, transaccion? }
- */
 async function comprarObjeto(jugadorId, objetoId) {
   const client = await pool.connect();
   try {
@@ -64,7 +59,6 @@ async function comprarObjeto(jugadorId, objetoId) {
       return { ok: false, codigo: 'OBJETO_NO_ENCONTRADO', mensaje: 'El objeto no existe en el catálogo.' };
     }
 
-    // CA3: Objeto no disponible en el catálogo
     if (!objeto.disponible) {
       await registrarTransaccion(client, jugadorId, objetoId, objeto.precio, 'rechazada', 'objeto_no_disponible');
       await client.query('COMMIT');
@@ -75,7 +69,6 @@ async function comprarObjeto(jugadorId, objetoId) {
       };
     }
 
-    // CA2: Bloqueo de compra por saldo insuficiente
     if (jugador.saldo < objeto.precio) {
       await registrarTransaccion(client, jugadorId, objetoId, objeto.precio, 'rechazada', 'saldo_insuficiente');
       await client.query('COMMIT');
@@ -87,7 +80,6 @@ async function comprarObjeto(jugadorId, objetoId) {
       };
     }
 
-    // CA4: Límite de inventario alcanzado
     const { rows: countRows } = await client.query(
       'SELECT COUNT(*)::int AS total FROM inventario WHERE jugador_id = $1',
       [jugadorId]
@@ -102,7 +94,6 @@ async function comprarObjeto(jugadorId, objetoId) {
       };
     }
 
-    // CA1: Compra exitosa con saldo suficiente
     await client.query(
       'UPDATE jugadores SET saldo = saldo - $1 WHERE id = $2',
       [objeto.precio, jugadorId]
