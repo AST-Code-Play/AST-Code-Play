@@ -204,9 +204,9 @@ Ver [Arquitectura.md](./Arquitectura.md)
 
 | Integrante | Rol(es) | Ítems de la rúbrica a cargo |
 |------------|---------|------------------------------|
-| Bruno Mora | Product Owner | [completar] |
-| Cristobal Cartagena | Scrum Master | [completar] |
-| Jesus Cortes | Developer | [completar] |
+| Cristobal Cartagena | Product Owner y Quality Assurance | 1.2, 2.2, 3.3, 4.1, |
+| Bruno Mora | Scrum Master, Technical Lead y Developer  | 1.1 , 1.3, 2.1, 2.3, 5.1|
+| Jesus Cortes | Arquitecto | 2.4, 3.1 3.2 |
 
 ## Bonus
 
