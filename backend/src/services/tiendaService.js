@@ -1,18 +1,5 @@
 const pool = require('../db/pool');
 
-/**
- * Servicio de compras - US-02: Sistema de compras (tienda dentro del juego)
- *
- * Implementa los 4 criterios de aceptación definidos en EspecificacionHU.md:
- *   CA1 - Compra exitosa con saldo suficiente
- *   CA2 - Bloqueo de compra por saldo insuficiente
- *   CA3 - Objeto no disponible en el catálogo
- *   CA4 - Límite de inventario alcanzado
- *
- * La capa de lógica del juego (este servicio) no conoce HTTP; las rutas
- * (capa de presentación/API) son las que traducen el resultado a códigos
- */
-
 async function obtenerCatalogo() {
   const { rows } = await pool.query('SELECT * FROM objetos ORDER BY id');
   return rows;
