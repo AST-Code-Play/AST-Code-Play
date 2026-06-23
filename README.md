@@ -16,7 +16,7 @@ del juego.
 
 | ID    | Nombre              | Issue |
 |-------|---------------------|-------|
-| US-02 | Sistema de compras  | [#2](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/2) |
+| US-02 | Sistema de compras  | [#2](https://github.com/AST-Code-Play/Proyecto-Fundamentos-De-Software/issues/12) |
 
 US-02 integra una **transacción que une dos entidades** (Jugador y Objeto), correspondiente al
 alcance mínimo exigido por la pauta de evaluación.
